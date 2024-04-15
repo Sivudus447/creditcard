@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card fraud</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1 class="title">Detecting Credit Card fraud using Machine Learning Algorithms</h1>
+    <div class="container">
+        <h1 class="header">Upload Dataset File</h1>
+        <form class="upload-form" action="/index" method="post" enctype="multipart/form-data">
+            <input class="upload-input" type="file" name="file">
+            <select class="technique-select" name="technique" id="technique">
+                <option value="" disabled selected>Select Model</option>
+                <option value="logistic_regression">Logistic Regression</option>
+                <option value="decision_tree">Decision Tree</option>
+                <option value="knn">K-Nearest Neighbors (KNN)</option>
+                <option value="naive_bayes">Naive Bayes</option>
+            </select>
+            <button class="submit-button" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1 class="title">Analysis of Credit Card Fraud</h1>
+    <div class="container">
+        <h2 class="sub-header">Selected Technique: {{ model_name }}</h2>
+        <div class="graph-container">
+            <h2 class="sub-header">Percentage of Fraudulent Transactions (Pie Chart)</h2>
+            <img src="data:image/png;base64,{{ fraud_pie_chart }}" alt="Fraudulent Transactions Pie Chart" class="graph">
+        </div>
+        <div class="graph-container">
+            <h2 class="sub-header">Credit Card Fraud Detection Accuracy Graph</h2>
+            <img src="data:image/png;base64,{{ accuracy_graph }}" alt="Accuracy Graph" class="graph">
+        </div>
+        <div class="graph-container">
+            <h2 class="sub-header">Scatter Plot of Test Data with Predicted Labels</h2>
+            <img src="data:image/png;base64,{{ scatter_plot }}" alt="Scatter Plot" class="graph">
+        </div>
+        <div class="graph-container">
+            <h2 class="sub-header">Confusion Matrix</h2>
+            <img src="data:image/png;base64,{{ confusion_matrix_plot }}" alt="Confusion Matrix" class="graph">
+        </div>
+        <div class="graph-container">
+            <h2 class="sub-header">Correlation Matrix</h2>
+            <img src="data:image/png;base64,{{ correlation_matrix }}" alt="Correlation Matrix" class="graph">
+        </div>
+
+        <div class="details-container">
+            <h2 class="sub-header">Additional Details related to Fraud</h2>
+            <ul class="details-list">
+                <li>Total Fraudulent Transactions: {{ fraud_details['Total Fraudulent Transactions'] }}</li>
+                <li>Total Legitimate Transactions: {{ fraud_details['Total Legitimate Transactions'] }}</li>
+                <li>Precision: {{ fraud_details['Precision'] }}</li>
+                <li>Recall: {{ fraud_details['Recall'] }}</li>
+                <li>F1 Score: {{ fraud_details['F1 Score'] }}</li>
+            </ul>
+        </div>
+
+       
+        
+    </div>
+</body>
+</html>

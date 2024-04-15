@@ -1,0 +1,149 @@
+/*default margin and padding */
+* {
+    margin: 0;                             /* to write * instat to work total website*/
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* background and text styles */
+body {                                                    
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: cornflowerblue;
+}
+
+.title{
+    box-shadow: #333;
+    border: 1px solid burlywood;
+    border-collapse: collapse;
+    font-size:50px;
+    margin: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: #fff;
+}
+
+/* Centering container */
+.container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color:rgb(35, 133, 207);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* header */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* upload form */
+.upload-form {
+    text-align: center;
+}
+
+.upload-input {
+    display: block;
+    margin: 0 auto 20px;
+    padding: 10px;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    width: 80%;
+    max-width: 400px;
+}
+
+.submit-button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #020e1a;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* inner sub header */
+.sub-header {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/* desing for graph container */
+.graph-container {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.graph {
+    max-width: 100%;
+    height: auto;
+}
+
+/* desing of container */
+.details-container {
+    text-align: center;
+}
+
+.details-list {
+
+    list-style-type:none;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    color:white;
+}
+
+.details-list li {
+    margin-bottom: 10px;
+}
+
+
+
+
+/* Select option */
+.technique-select {
+    display: block;
+    margin: 0 auto 20px;
+    padding: 10px;
+    border: 2px solid #ccc; /* Change dashed to solid for consistent border */
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    width: 80%;
+    max-width: 400px;
+    appearance: none; /* Remove default dropdown arrow */
+    -webkit-appearance: none; /* For older versions of Safari */
+    -moz-appearance: none; /* For older versions of Firefox */
+    cursor: pointer;
+}
+
+/* Style when select is open */
+.technique-select:focus {
+    outline: none;
+    border-color: #0056b3; /* Change border color when focused */
+}
+
+/* Style when option is hovered */
+.technique-select option:hover {
+    background-color: #ddd; /* Change background color when hovered */
+}
+
+/* Style for selected option */
+.technique-select option:checked {
+    background-color: #0056b3; /* Change background color of selected option */
+    color: #fff; /* Change text color of selected option */
+}
+
+
